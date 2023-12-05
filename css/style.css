@@ -1,0 +1,148 @@
+:root {
+  --primary: #9ecdec;
+  --bg: rgb(229, 239, 241);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #000000;
+  min-height: 2000px;
+}
+
+/*navbar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #0c4a4ecc;
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  font-style: italic;
+}
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+.navbar .navbar-nav a:after {
+  display: block;
+  padding-bottom: 0, 5rem;
+  border-bottom: 0.1rem solid var(--primary);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#humburger- log-out {
+  display: none;
+}
+
+/*hero section*/
+.hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/Header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*visi misi*/
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.vision-mission {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.vision,
+.mission {
+  flex: 1;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/*Statistik Desa*/
+.Statistik_Desa {
+padding: 8rem 7% 1.4rem ;
+}
+
+.Statistik_Desa h2{
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+/*media Queries*/
+/*laptop*/
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/*tablet*/
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+  #humburger- log-out {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+  }
+}
+
+/*media phone*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
